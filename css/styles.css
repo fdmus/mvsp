@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #193761;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* max-width: 800px; */
+    margin: 50px auto;
+    text-align: center;
+    background-color: #9cdcfe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(254, 93, 127, 1);
+}
+
+h1 {
+    color: #;
+    font-family: "Chalkduster", cursive;
+    font-size: 40px;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+
+#videoPlayer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid #f8d714; */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(245, 7, 58, 0.8);
+    outline: none;
+    max-width: 100%;
+    max-height:450px;
+}
+
+#video-container {
+    margin-top: 20px;
+}
+
+#check_bt_1 {
+    left: -164px;
+}
+
+#check_bt_2 {
+    left: -99px;
+}
+
+#check_bt_3 {
+    left: -34px;
+}
+
+#check_bt_4 {
+    left: 31px;
+}
+
+#check_bt_5 {
+    left: 96px;
+}
+
+#check_bt_6 {
+    left: 161px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2bc3d1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+button:hover {
+    background-color: #ffcd43;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #videoPlayer {
+        max-width: 100%;
+    }
+
+    #check_bt_1,
+    #check_bt_2,
+    #check_bt_3,
+    #check_bt_4,
+    #check_bt_5,
+    #check_bt_6 {
+        left: auto;
+    }
+}
