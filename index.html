@@ -1,0 +1,82 @@
+<!--
+ * Author: Sky
+ * 📧tswme@foxmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>美女视频 - 微信公众号: 天视网导航</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/amazeui/2.3.0/css/amazeui.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>随机热舞小视频</h1>
+        <div id="video-container">
+            <video id="videoPlayer" controls width="1000" height="500" autoplay></video>
+        </div>
+        <br>
+        <button id ='check_bt_2'style="text-align:center;margin: 0px;font-size: 1.6rem;background-color: #ff6699;color: #fff;text-decoration:none"onclick="loadVideo_2()">刷新视频</button>
+        <button id ='check_bt_3'class="am-btn am-btn-primary am-round"data-am-modal="{target: '#zanzhu'}">¥ 💝<b>赞助</b>❤️</button>
+        <a href="https://fdmus.github.io/tsw/"><button id ='check_bt_4'style="text-align:center;margin: 0px;font-size: 1.6rem;color: #fff;text-decoration:none">回到主页</button>        
+    </div>
+<!-- 更多资源QQ：819920456 天视网导航提供技术支持 -->
+    <div class="am-modal am-modal-alert" tabindex="-1" id="zanzhu">
+<div class="am-modal-dialog">
+<div class="am-modal-hd">『赞助天视网导航』</div>
+<div class="am-modal-bd">
+<span style="display:block;text-align:center;font-size:15px;">(支持微信 支付宝 QQ 银联)</span>
+<img style="display:block;margin:5px auto 0 auto;height:200px;width:200px;" src="./img/zanzhu.jpg">
+</div>
+<div class="am-modal-footer">
+<span class="am-modal-btn"><b>谢谢！</b></span></div>
+</div>
+</div>
+<!-- 更多资源QQ：819920456 天视网导航提供技术支持 -->
+    <script src="./js/scripts.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/amazeui/2.7.2/js/amazeui.min.js"></script>
+    <br>
+<div>
+  <center>   
+	<h5 style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent;" >Copyright © 2024 Sky™. All Rights Reserved</h5>
+    </center>
+</div>
+</body>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+  <script>
+    $(document).ready(function () {
+      var hearts = ["❤️", "天", "💙", "视", "💜", "网","💛", "导", "💚", "航", "💖", "💝"]; 
+      $(document).click(function (e) {
+        var x = e.pageX;
+        var y = e.pageY;
+        var heartIcon = $("<div>").addClass("heart").text(hearts[Math.floor(Math.random() * hearts.length)]); 
+        $(heartIcon).css({
+          position: "absolute",
+          top: y - 10,
+          left: x - 10,
+          color: "red",
+          userSelect: "none",
+          pointerEvents: "none"
+        }); 
+        $("body").append($(heartIcon));
+        // 1000 是动画的持续时间
+        $(heartIcon).animate({
+          top: y - 100,
+          opacity: 0
+        }, 1000, function () {
+          $(heartIcon).remove();
+        });
+      });
+    });
+  </script>
+</body> 
+</html>
+<!--
+ * Author: Sky
+ * 📧tswme@foxmail.com
+-->
